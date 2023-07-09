@@ -39,6 +39,41 @@
         display: block;
         margin: 13px 0;
       }
+      #templateHeader,#templateBody,#templateFooter{
+			padding-right:18px;
+			padding-left:18px;
+		}
+
+        
+        #templateHeader{
+			/*@editable*/background-color:#f8f4d8;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:18px;
+			/*@editable*/padding-bottom:0;
+		}
+
+        #templateHeader,#templateHeader p{
+			/*@editable*/color:#606060;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section Header Link
+	*/
+		#templateHeader a,#templateHeader p a{
+			/*@editable*/color:#237A91;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	
     </style>
     
   
@@ -60,6 +95,17 @@
           width: auto !important;
         }
       }
+      @media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Header Text
+	*/
+		#templateHeader,#templateHeader p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}
     </style>
     <style type="text/css">
       a,
@@ -77,40 +123,14 @@
     <div style="background-color:#f8f4d8;">
      
   
-      <div style="margin:0px auto;max-width:600px;">
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
-          <tbody>
-            <tr>
-              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
-                
-  
-                <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                    <tbody><tr>
-                      <td style="font-size:0px;word-break:break-word;">
-                        
-                        <div style="height:20px;">   </div>
-                        
-                      </td>
-                    </tr>
-                  </tbody></table>
-                </div>
-                
-        
-                    </table>
-                  
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      
       
   
   
       <!--START OF STATIC HEADER BOX-->
       <div style="background:#f8f4d8 top center / auto repeat;margin:0px auto;border-radius:4px 4px 0 0;max-width:600px;">
         <div style="line-height:0;font-size:0;">
-          <table align="center" background="https://www.transparenttextures.com/patterns/brushed-alum.png" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f8f4d8 top center / auto repeat;width:100%;border-radius:4px 4px 0 0;">
+          <table align="center"  border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f8f4d8 top center / auto repeat;width:100%;border-radius:4px 4px 0 0;">
             <tbody>
               <tr>
                 <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
@@ -122,10 +142,20 @@
                         <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                             <tbody>
-                              <tr>
-                                <td style="width:150px;">
+                                <tr>
+                                    <td valign="top" id="templateHeader">
+        
+                                        <!-- BEGIN MODULE: HEADER IMAGE // -->
+                                        <img src="https://codedmails.com/images/logo-white.png" alt="" border="0" style="margin: 0; padding: 0;" mc:edit="header_image">
+                                        <!-- // END MODULE: HEADER IMAGE -->
+        
+                                    </td>
+                                </tr>
+                              
+                                <tr>
+                                <!--<td style="width:150px;">
                                   <img height="auto" src="https://codedmails.com/images/logo-white.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="150" />
-                                </td>
+                                </td>-->
                               </tr>
                             </tbody>
                           </table>
@@ -293,7 +323,7 @@
                             
                           </tbody></table>
                         </div>
-                        <!--THIS IS THE IMAGE FOR SECTION 2-->
+                        <!--THIS IS THE IMAGE FOR SECTION 1-->
                         <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tbody><tr>
@@ -322,7 +352,7 @@
   
   
   
-      <!--START OF SECTION 1 VC DEALS-->
+      <!--START OF SECTION 2 VC DEALS-->
   
 
       
@@ -356,7 +386,7 @@
                                                           <div style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:24px;font-weight:500;line-height:30px;text-align:left;color:#003366;position:relative;z-index:2;">
                                                             <h1 style="padding-left: 5%;margin-top:200%;margin: 0; font-size: 32px; line-height: 40px; font-weight:400 ;">Microsoft CFO Says OpenAI and Other AI Products Will Add $10 Billion in Revenue</h1>
                                                           </div>
-                                                          <span style="padding-bottom:135%;padding-top:0%;padding-left:10%;position:absolute;top:350%;left:5%;transform:translate(-50%,-50%);font-size:200px;color:#eab5179c;opacity:0.5;font-family:Poppins, Helvetica, Arial, sans-serif;z-index:1;font-weight:bold">1</span>
+                                                          <span style="padding-bottom:135%;padding-top:0%;padding-left:10%;position:absolute;top:350%;left:5%;transform:translate(-50%,-50%);font-size:200px;color:#eab5179c;opacity:0.5;font-family:Poppins, Helvetica, Arial, sans-serif;z-index:1;font-weight:bold">2</span>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -422,10 +452,10 @@
                 </table>
               </div>
 
-              <!--END OF SECTION 1 GEN-->
+              <!--END OF SECTION 2 VC Deals-->
   
   
-                 <!--START OF SECTION 1 VC DEALS-->
+                 <!--START OF SECTION 3 VC DEALS-->
   
 
       
@@ -459,7 +489,7 @@
                                                           <div style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:24px;font-weight:500;line-height:30px;text-align:left;color:#003366;position:relative;z-index:2;">
                                                             <h1 style="padding-left: 5%;margin-top:200%;margin: 0; font-size: 32px; line-height: 40px; font-weight:400 ;">Microsoft CFO Says OpenAI and Other AI Products Will Add $10 Billion in Revenue</h1>
                                                           </div>
-                                                          <span style="padding-bottom:135%;padding-top:0%;padding-left:10%;position:absolute;top:350%;left:5%;transform:translate(-50%,-50%);font-size:200px;color:#eab5179c;opacity:0.5;font-family:Poppins, Helvetica, Arial, sans-serif;z-index:1;font-weight:bold">1</span>
+                                                          <span style="padding-bottom:135%;padding-top:0%;padding-left:10%;position:absolute;top:350%;left:5%;transform:translate(-50%,-50%);font-size:200px;color:#eab5179c;opacity:0.5;font-family:Poppins, Helvetica, Arial, sans-serif;z-index:1;font-weight:bold">3</span>
                                                         </td>
                                                       </tr>
                                                     </tbody>
@@ -500,7 +530,7 @@
                             
                           </tbody></table>
                         </div>
-                        <!--THIS IS THE IMAGE FOR SECTION 2-->
+                        <!--THIS IS THE IMAGE FOR SECTION 3-->
                         <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tbody><tr>
@@ -525,9 +555,9 @@
                 </table>
               </div>
 
-              <!--END OF SECTION 1 GEN-->
+              <!--END OF SECTION 3 GEN-->
                 
-  <!--START OF SECTION 1 VC DEALS-->
+  <!--START OF SECTION 4 VC DEALS-->
   
 
       
@@ -561,7 +591,7 @@
                                                         <div style="font-family:Georgia, 'Times New Roman', Times, serif;font-size:24px;font-weight:500;line-height:30px;text-align:left;color:#003366;position:relative;z-index:2;">
                                                           <h1 style="padding-left: 5%;margin-top:200%;margin: 0; font-size: 32px; line-height: 40px; font-weight:400 ;">Microsoft CFO Says OpenAI and Other AI Products Will Add $10 Billion in Revenue</h1>
                                                         </div>
-                                                        <span style="padding-bottom:135%;padding-top:0%;padding-left:10%;position:absolute;top:350%;left:5%;transform:translate(-50%,-50%);font-size:200px;color:#eab5179c;opacity:0.5;font-family:Poppins, Helvetica, Arial, sans-serif;z-index:1;font-weight:bold">1</span>
+                                                        <span style="padding-bottom:135%;padding-top:0%;padding-left:10%;position:absolute;top:350%;left:5%;transform:translate(-50%,-50%);font-size:200px;color:#eab5179c;opacity:0.5;font-family:Poppins, Helvetica, Arial, sans-serif;z-index:1;font-weight:bold">4</span>
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -602,7 +632,7 @@
                           
                         </tbody></table>
                       </div>
-                      <!--THIS IS THE IMAGE FOR SECTION 2-->
+                      <!--THIS IS THE IMAGE FOR SECTION 4-->
                       <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                           <tbody><tr>
@@ -627,7 +657,7 @@
               </table>
             </div>
 
-            <!--END OF SECTION 1 GEN-->
+            <!--END OF SECTION 4 GEN-->
                 
   
                 
@@ -640,29 +670,38 @@
       </div>
      
   
-      <div style="background:#fffdfd;background-color:#fffdfd;margin:0px auto;max-width:600px;">
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fffdfd;background-color:#fffdfd;width:100%;">
+      <!--START OF Bottom NOTES-->
+      <div style="height: 100px; background:#f8f4d8;background-color:#f8f4d8;margin:0px auto;border-radius:0 0 4px 4px;max-width:600px;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f8f4d8;background-color:#f8f4d8;width:100%;border-radius:0 0 4px 4px;">
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+              <td style="direction:ltr;font-size:0px;padding:40px 10px 20px 10px;text-align:center;">
                 
+  
                 <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                     <tbody><tr>
                       <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                        <div style="font-family:Poppins, Helvetica, Arial, sans-serif;font-size:20px;font-weight:300;line-height:30px;text-align:left;color:#003366;">
-                          <h3 style="font-size: 16px; font-weight: 400; line-height: 20px;">That's all for today folks! If you'd like to learn more about our mission, click below to visit our website and social media.</h3>
+                        <div style="font-family:Poppins, Helvetica, Arial, sans-serif;font-size:15px;font-weight:300;line-height:22px;text-align:left;color:#003366;">
+                          <p style="padding-left:5%; padding-right:5%; margin: 0; position: relative; top: -50px;"> That's all for today folks! If you'd like to learn more about our mission, click below to visit our website and social media.
+                          </p>
+                          
+      
                         </div>
                       </td>
                     </tr>
+            
                   </tbody></table>
                 </div>
                 
+                
+  
               </td>
             </tr>
           </tbody>
         </table>
       </div>
+      <!--END OF Bottom NOTES-->
      
   
       <div style="background:#043768;background-color:#043768;margin:0px auto;max-width:600px;">
